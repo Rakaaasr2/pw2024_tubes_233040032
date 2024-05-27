@@ -53,6 +53,13 @@ $k = mysqli_fetch_object($kategori);
             padding: 10px;
             margin-bottom: 15px;
         }
+
+          @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%; 
+            }
+
+        }
     </style>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -76,6 +83,9 @@ $k = mysqli_fetch_object($kategori);
                         <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                     </li>
                     <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>
                 </ul>
@@ -90,7 +100,7 @@ $k = mysqli_fetch_object($kategori);
             <div class="box">
                 <form action="" method="POST">
                     <input type="text" name="nama" placeholder="Nama Kategori" class="input-control" value="<?php echo $k->category_name ?>" required>
-                    <input type="submit" name="submit" value="Submit" class="btn btn-success">
+                    <input type="submit" name="submit" value="Ubah Kategori" class="btn btn-success">
                 </form>
 
                 <?php

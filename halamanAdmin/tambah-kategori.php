@@ -70,6 +70,9 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
                         <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                     </li>
                     <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>
                 </ul>
@@ -84,7 +87,7 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
             <div class="box">
                 <form action="" method="POST">
                     <input type="text" name="nama" placeholder="Nama Kategori" class="input-control" required>
-                    <input type="submit" name="submit" value="Submit" class="btn btn-success">
+                    <input type="submit" name="submit" value="Tambah Kategori" class="btn btn-success">
                 </form>
 
                 <?php

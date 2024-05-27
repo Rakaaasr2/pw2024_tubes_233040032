@@ -1,8 +1,10 @@
 <?php
 session_start();
+include '../connect.php';
 if ($_SESSION['status_login'] != true) {
   echo '<script>window.location="login.php"</script>';
 }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -74,7 +76,7 @@ if ($_SESSION['status_login'] != true) {
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class='bx bxs-capsule' style='color:#ff0000'></i></>K2KLIK</a>
+      <a class="navbar-brand" href="dashboard.php"><i class='bx bxs-capsule' style='color:#ff0000'></i></>K2KLIK</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -93,7 +95,10 @@ if ($_SESSION['status_login'] != true) {
             <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="logut.php" >Logout<i class='bx bx-power-off'></i></a>
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="logut.php" ><i class='bx bx-log-out-circle' ></i></i></a>
           </li>
 
 

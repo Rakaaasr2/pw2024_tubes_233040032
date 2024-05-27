@@ -68,6 +68,9 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
                         <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                     </li>
                     <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="logout.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>
                 </ul>
@@ -101,7 +104,7 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
                         <option value="1">Aktif</option>
                         <option value="0">Tidak Aktif</option>
                     </select>
-                    <input type="submit" name="submit" value="Submit" class="btn btn-success">
+                    <input type="submit" name="submit"  value="tambah Data Produk" class="btn btn-success">
                 </form>
 
                 <?php

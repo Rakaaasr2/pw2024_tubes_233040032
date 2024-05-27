@@ -44,7 +44,8 @@ if ($_SESSION['status_login'] != true) {
             border-collapse: collapse;
         }
 
-        table th, table td {
+        table th,
+        table td {
             padding: 10px;
             text-align: left;
         }
@@ -79,7 +80,9 @@ if ($_SESSION['status_login'] != true) {
                         <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
+                        <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+                    </li <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>
                 </ul>
             </div>
@@ -91,7 +94,7 @@ if ($_SESSION['status_login'] != true) {
         <div class="container">
             <h3>Data Kategori</h3>
             <div class="box">
-                <p><a href="Tambah-kategori.php"  class="btn btn-success btn-sm"><i class='bx bx-plus' ></i>Tambah Data</a></p>
+                <p><a href="Tambah-kategori.php" class="btn btn-success btn-sm"><i class='bx bx-plus'></i>Tambah Data</a></p>
                 <table border="1" cellspacing="0" class="table table-bordered">
                     <thead>
                         <tr>
@@ -103,17 +106,17 @@ if ($_SESSION['status_login'] != true) {
                     <tbody>
                         <?php
                         $kategori = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY category_id DESC");
-                        $nomor = 1; 
+                        $nomor = 1;
                         while ($row = mysqli_fetch_array($kategori)) {
                         ?>
-                        <tr>
-                            <td><?php echo $nomor++; ?></td>
-                            <td><?php echo $row['category_name']; ?></td>
-                            <td>
-                                <a href="edit-kategori.php?id=<?php echo $row['category_id'] ?> " class="btn btn-warning btn-sm">Edit</a>
-                                <a href="proses-hapus.php?idk=<?php echo $row['category_id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('yakin data ini ingin di hapus?')">Hapus</a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td><?php echo $nomor++; ?></td>
+                                <td><?php echo $row['category_name']; ?></td>
+                                <td>
+                                    <a href="edit-kategori.php?id=<?php echo $row['category_id'] ?> " class="btn btn-warning btn-sm"><i class='bx bxs-edit'></i></a>
+                                    <a href="proses-hapus.php?idk=<?php echo $row['category_id'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('yakin data ini ingin di hapus?')"><i class='bx bx-trash' style='color:#ffffff'></i></a>
+                                </td>
+                            </tr>
                         <?php } ?>
                     </tbody>
                 </table>

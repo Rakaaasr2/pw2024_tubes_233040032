@@ -66,6 +66,9 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
                         <a class="nav-link" href="data-produk.php">Data Produk</a>
                     </li>
                     <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+                     </li
+                    <li class="nav-item">
                         <a class="nav-link" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>
                 </ul>
@@ -107,8 +110,8 @@ if (!isset($_SESSION['status_login']) || $_SESSION['status_login'] != true) {
                                 <td> <a href="../produk/img/<?php echo $row['produk_image']; ?>" target="_blank"><img src="../produk/img/<?php echo $row['produk_image']; ?>" width="70px"></a></td>
                                 <td><?php echo ($row['produk_status'] == 0)? 'Tidak Aktif' : 'Aktif'; ?></td>
                                 <td>
-                                    <a href="edit-produk.php?id=<?php echo $row['produk_id']; ?>" class="btn btn-warning btn-sm">Edit</a>
-                                    <a href="proses-hapus.php?idp=<?php echo $row['produk_id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin data ini ingin dihapus?')">Hapus</a>
+                                    <a href="edit-produk.php?id=<?php echo $row['produk_id']; ?>" class="btn btn-warning btn-sm"><i class='bx bxs-edit'></i></a>
+                                    <a href="proses-hapus.php?idp=<?php echo $row['produk_id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin data ini ingin dihapus?')"><i class='bx bx-trash' style='color:#ffffff'  ></i></a>
                                 </td>
                             </tr>
                             <?php

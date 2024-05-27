@@ -12,7 +12,7 @@ $p = mysqli_fetch_object($produk);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Halaman dashboard</title>
+    <title>Detail Produk <?php echo $p->produk_name?></title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -250,7 +250,9 @@ $p = mysqli_fetch_object($produk);
                     <p>Deskripsi :<br>
                         <?php echo $p->produk_description ?>
                     </p>
-                    <p> <a href="https://api.whatsapp.com/send?phone=+6285724554781>&text=Hallo,Saya ingin membeli produk <?php echo $p->produk_name ?>" target="_blank"><i class='bx bxl-whatsapp' style='color:#007203'  >Klik Whatsapp Untuk membeli produk <?php echo $p->produk_name?></i></a></p>
+                    <p style="font-weight: bold; font-style: italic; font-size: 15px; margin-top:50px; margin-bottom:-26px;">Klik Whatsapp Untuk membeli produk <?php echo $p->produk_name?></p>
+                    </p>
+                    <p class="btn btn-success"> <a href="https://api.whatsapp.com/send?phone=+6285724554781>&text=Hallo,Saya ingin membeli produk <?php echo $p->produk_name ?>" target="_blank"><i class='bx bxl-whatsapp' style='color:#ffffff'  ></i></i></a></p>
                 </div>
             </div>
         </div>

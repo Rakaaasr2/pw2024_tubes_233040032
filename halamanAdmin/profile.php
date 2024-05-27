@@ -69,8 +69,11 @@
                             <a class="nav-link active" aria-current="page" href="data-kategori.php">Data Kategori</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="data-produk">Data Produk</a>
+                            <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                         </li>
+                        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="logut.php">Logout<i class='bx bx-power-off'></i></a>
                         </li>

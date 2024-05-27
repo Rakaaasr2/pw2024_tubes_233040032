@@ -49,6 +49,7 @@ $p = mysqli_fetch_object($produk);
             padding: 10px;
             margin-bottom: 15px;
         }
+        
     </style>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
@@ -71,6 +72,9 @@ $p = mysqli_fetch_object($produk);
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="data-produk.php">Data Produk</a>
                     </li>
+                    <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../halamanUser/index.php">Halaman User</a>
+          </li
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="logout.php">Logout<i class='bx bx-power-off'></i></a>
                     </li>

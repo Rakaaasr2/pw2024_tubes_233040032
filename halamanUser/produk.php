@@ -9,7 +9,7 @@ $a = mysqli_fetch_object($kontak);
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Halaman dashboard</title>
+    <title>K2KLIK-Obat, Suplemen dan lainnya</title>
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,6 @@ $a = mysqli_fetch_object($kontak);
 
         .box {
             background-color: #fff;
-            border: 1px solid #ccc;
             padding: 15px;
             box-sizing: border-box;
         }
@@ -86,29 +85,22 @@ $a = mysqli_fetch_object($kontak);
             color: white;
         }
 
-        .col-5 {
-            width: 20%;
-            height: 100px;
-            text-align: center;
-            float: left;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
         .col-4:hover {
             box-shadow: 0 0 3px #999;
-
         }
 
-        .col-4 {
-            width: 25%;
-            height: 320px;
-            border: 1px solid #ccc;
-            float: left;
-            padding: 10px;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-        }
+            .col-4 {
+                width: 22%;
+                height: 280px;
+                border: 1px solid #ccc;
+                box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1), -1px 0px 0px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                margin-left: 2%;
+            }
 
         a {
             color: inherit;
@@ -124,18 +116,20 @@ $a = mysqli_fetch_object($kontak);
             font-family: "Montserrat", sans-serif;
             font-weight: bold;
             font-size: 14px;
-            margin-top: -13px;
-            float: right;
+            margin-top: -10px;
+            float: left;
             color: #c70039;
         }
 
         .nama {
             font-size: 15px;
-            margin-top: -20px;
+            margin-top: 15px;
         }
 
         .col-4 img {
-            width: 100%;
+            width: 90%;
+            height: 200px;
+            object-fit: cover;
         }
 
         .footer {
@@ -143,11 +137,10 @@ $a = mysqli_fetch_object($kontak);
             background-color: #333;
             color: #fff;
             text-align: center;
-
         }
 
         .footer h5 {
-            font-size: 18px
+            font-size: 18px;
         }
 
         .footer p {
@@ -155,24 +148,39 @@ $a = mysqli_fetch_object($kontak);
             margin-bottom: 20px;
         }
 
+        
+
         @media screen and (max-width: 768px) {
             .container {
-                width: 80%;
-            }
-
-            .col-5 {
-                width: 50%;
-                margin-bottom: 10px;
+                width: 95%;
             }
 
             .col-4 {
-                width: 50%;
-                height: 300px;
+                width: 48%;
+                height: 250px;
+                margin-left: 2%;
+                margin-bottom: 15px;
             }
+            .col-4 img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
 
-            .col-2 {
-                width: 100%;
-            }
+        .harga {
+            font-family: "Montserrat", sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: -2px;
+            float: left;
+            color: #c70039;
+        }
+
+        .nama {
+            font-size: 12px;
+            margin-top: 1px;
+        }
+
         }
     </style>
 
@@ -227,7 +235,7 @@ $a = mysqli_fetch_object($kontak);
                     <a href="detail-produk.php?id=<?php echo $p['produk_id'] ?>">
                         <div class="col-4">
                             <img src="../produk/img/<?php echo $p['produk_image'] ?>">
-                            <p class="nama"><?php echo $p['produk_name'] ?> </p>
+                            <p class="nama"><?php echo substr( $p['produk_name'], 0, 23 )?> </p>
                             <p class="harga">Rp.<?php echo number_format($p['produk_price']) ?></p>
                         </div>
                     </a>
@@ -257,4 +265,3 @@ $a = mysqli_fetch_object($kontak);
 </body>
 
 </html>
-
