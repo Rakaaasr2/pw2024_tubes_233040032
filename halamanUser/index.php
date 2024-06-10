@@ -228,6 +228,7 @@
             <p>Kategori Tidak ada</p>
           <?php } ?>
         </div>
+        <a href="produk.php"><button type="button" class="btn btn-outline-success">Semua Produk K2KLIK...</button></a>
       </div>
     </div>
 

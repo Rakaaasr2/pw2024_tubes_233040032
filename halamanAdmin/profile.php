@@ -85,7 +85,7 @@
         <!-- content  -->
         <div class="section">
             <div class="container">
-                <h3>Profile</h3>
+                <h3>Profile Admin <i class='bx bxs-user-detail'></i></h3>
                 <div class="box">
                     <form action="" method="POST">
                         <input type="text" name="nama" placeholder="Nama Lengkap" class="input-control" value="<?php echo $d->admin_name ?>" required>
@@ -93,7 +93,7 @@
                         <input type="text" name="hp" placeholder="No Hp" class="input-control" value="<?php echo $d->admin_telp ?>" required>
                         <input type="text" name="email" placeholder="Email" class="input-control" value="<?php echo $d->admin_email ?>" required>
                         <input type="text" name="alamat" placeholder="Alamat" class="input-control" value="<?php echo $d->admin_address ?>" required>
-                        <input type="submit" name="submit" value="Ubah Profil" class="btn btn-success">
+                        <input type="submit" name="submit" value="Change Profil" class="btn btn-success">
                     </form>
 
                     <?php
@@ -123,13 +123,13 @@
                 </div>
 
                 <!-- Ubah password -->
-                <h3>Ubah Password</h3>
+                <h3>Change PAssword <i class='bx bx-edit'></i></h3>
                 <div class="box">
                     <form action="" method="POST">
                         <input type="password" name="pass1" placeholder="Password baru" class="input-control" value="<?php echo $d->admin_name ?>" required>
                         <input type="password" name="pass2" placeholder="Konfirmasi Password Baru" class="input-control" value="<?php echo $d->username ?>" required>
                        
-                        <input type="submit" name="ubah_password" value="Ubah Password" class="btn btn-success">
+                        <input type="submit" name="ubah_password" value="Change Password" class="btn btn-success">
                     </form>
 
                     <?php

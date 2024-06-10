@@ -23,6 +23,8 @@
             margin: 0;
         }
 
+        body {}
+
         #bg-login {
             display: flex;
             height: 100vh;

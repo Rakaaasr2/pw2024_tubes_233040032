@@ -109,7 +109,7 @@ if ($_SESSION['status_login'] != true) {
   <!-- content  -->
   <div class="container">
     <h2>Dashboard</h2>
-    <h1>SELAMAT DATANG <?php echo $_SESSION['a_global']->admin_name ?> DI K2KLIK <i class='bx bxs-capsule bx-tada' style='color:#17c401'></i></h1>
+    <h1>HALAMAN ADMIN K2KLIK <i class='bx bxs-capsule bx-tada' style='color:#17c401'></i></h1>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

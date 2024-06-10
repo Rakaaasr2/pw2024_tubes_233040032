@@ -239,7 +239,7 @@ $p = mysqli_fetch_object($produk);
     <!-- produk detail -->
     <div class="section">
         <div class="container">
-            <h3>Detail Produk</h3>
+            <h3> <a href="index.php"><i class='bx bx-arrow-back'></i></a>Detail Produk</h3>
             <div class="box">
                 <div class="col-2">
                     <img src="../produk/img/<?php echo $p->produk_image; ?>" width="100% ">
