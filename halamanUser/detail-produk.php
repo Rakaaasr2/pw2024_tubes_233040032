@@ -219,6 +219,9 @@ $p = mysqli_fetch_object($produk);
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="produk.php">Produk</a>
                     </li>
+                    <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../halamanAdmin/logut.php" ><i class='bx bx-log-out-circle' ></i></i></a>
+          </li>
                 </ul>
             </div>
         </div>
