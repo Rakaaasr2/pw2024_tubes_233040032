@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 10, 2024 at 08:11 AM
+-- Generation Time: Jun 10, 2024 at 08:19 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -35,7 +35,7 @@ CREATE TABLE `tb_admin` (
   `admin_telp` varchar(20) NOT NULL,
   `admin_email` varchar(50) NOT NULL,
   `admin_address` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_admin`
@@ -53,7 +53,7 @@ INSERT INTO `tb_admin` (`admin_id`, `admin_name`, `username`, `password`, `admin
 CREATE TABLE `tb_category` (
   `category_id` int NOT NULL,
   `category_name` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_category`
@@ -83,7 +83,7 @@ CREATE TABLE `tb_produk` (
   `produk_image` varchar(100) NOT NULL,
   `produk_status` tinyint(1) NOT NULL,
   `date_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_produk`
